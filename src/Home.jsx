@@ -76,9 +76,7 @@ export default function Home() {
       <header className="flex items-center justify-between px-6 py-4 shadow-md">
         <div className="text-2xl font-bold text-pink-600">Jagriti Designs</div>
         <nav className="space-x-4">
-          <a href="#tailoring" className="hover:underline">Tailoring</a>
-          <a href="#rent" className="hover:underline">Dress on Rent</a>
-          <a href="#contact" className="hover:underline">Contact</a>
+          <a href="#tailoring" className="hover:underline">Tailoring | Lehenga | Suit | Saree </a>
         </nav>
       </header>
 
@@ -86,10 +84,15 @@ export default function Home() {
       <section className="text-center py-16 px-4 bg-gradient-to-r from-pink-200 to-pink-100">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Custom Fashion for Every Woman</h1>
         <p className="text-lg text-gray-700 mb-6">Beautifully tailored dresses made to order</p>
-        <button className="bg-pink-600 hover:bg-pink-700 text-white text-lg px-6 py-2 rounded-full">
-          Showcases
-        </button>
-		<p className="text-lg text-gray-700 px-8 py-4">Dress on rent | Handmade | send us desired design</p>
+        <a 
+          href="https://www.instagram.com/jagriti_designs?igsh=MXJ5MzFiYmRrbWhpaA==" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <button className="bg-pink-600 hover:bg-pink-700 text-white text-lg px-6 py-2 rounded-full">
+            Instagram
+          </button>
+        </a>
       </section>
 
       {/* Product Sections */}
@@ -138,6 +141,18 @@ export default function Home() {
         >
           Chat on WhatsApp
         </a>
+
+        {/* Google Maps Location Link */}
+        <div className="mt-6">
+          <a 
+            href="https://maps.app.goo.gl/oFrFmMvJuWArgxU87" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline text-lg"
+          >
+            📍 Visit Jagriti Designs & Priyanshu Ladies Fashion on Google Maps
+          </a>
+        </div>
       </section>
     </div>
   );
