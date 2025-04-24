@@ -1,4 +1,6 @@
+// src/Home.jsx
 import React from 'react';
+import ContactForm from './components/ContactForm';
 
 const sampleProducts = [
 	{
@@ -67,7 +69,6 @@ const sampleProducts = [
 	  image: 'https://i.ibb.co/xSsYJQKs/Whats-App-Image-2025-04-11-at-15-01-20-cda7b03a.jpg',
 	},
   ];
-  
 
 export default function Home() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
       <header className="flex items-center justify-between px-6 py-4 shadow-md">
         <div className="text-2xl font-bold text-pink-600">Jagriti Designs</div>
         <nav className="space-x-4">
-          <a href="#tailoring" className="hover:underline">Tailoring | Lehenga | Suit | Saree </a>
+          <a href="#tailoring" className="hover:underline">Tailoring | Lehenga | Suit | Saree</a>
         </nav>
       </header>
 
@@ -85,7 +86,7 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Custom Fashion for Every Woman</h1>
         <p className="text-lg text-gray-700 mb-6">Beautifully tailored dresses made to order</p>
         <a 
-          href="https://www.instagram.com/jagriti_designs?igsh=MXJ5MzFiYmRrbWhpaA==" 
+          href="https://www.instagram.com/ijagriticreator?igsh=N20weHpqbWt2OXM1" 
           target="_blank" 
           rel="noopener noreferrer"
         >
@@ -94,6 +95,7 @@ export default function Home() {
           </button>
         </a>
       </section>
+
 
       {/* Product Sections */}
       <section id="tailoring" className="py-12 px-6">
@@ -150,10 +152,17 @@ export default function Home() {
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline text-lg"
           >
-            📍 Visit Jagriti Designs & Priyanshu Ladies Fashion on Google Maps
+            📍 Visit Jagriti Designs 
           </a>
         </div>
       </section>
-    </div>
+
+      {/* Contact Form */}
+      <section className="p-6 bg-gray-100">
+        <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+        <ContactForm />
+      </section>
+
+      </div>
   );
 }
